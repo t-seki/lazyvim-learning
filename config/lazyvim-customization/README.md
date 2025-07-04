@@ -19,15 +19,29 @@ LazyVimは既に完璧に設定された環境です。このカスタマイズ�
 ## 📁 カスタマイズファイル構成
 
 ```
-~/.config/nvim/lua/config/
-├── options.lua          # 追加オプション設定
-├── keymaps.lua          # カスタムキーマップ
-└── autocmds.lua         # 自動コマンド
+config/lazyvim-customization/
+└── lua/
+    ├── config/
+    │   ├── options.lua      # 学習特化オプション設定
+    │   ├── keymaps.lua      # 学習支援キーマップ
+    │   └── autocmds.lua     # 学習環境自動コマンド
+    └── plugins/
+        ├── learning.lua     # 学習支援プラグイン強化
+        └── project.lua      # プロジェクト管理強化
+```
 
-~/.config/nvim/lua/plugins/
-├── learning.lua         # 学習支援プラグイン
-├── japanese.lua         # 日本語環境設定
-└── project.lua          # プロジェクト管理強化
+**適用後の ~/.config/nvim/ 構成**:
+```
+~/.config/nvim/lua/
+├── config/              # LazyVim標準 + 学習支援追加
+│   ├── autocmds.lua     # 学習環境自動コマンド (追加)
+│   ├── keymaps.lua      # 学習支援キーマップ (追加)  
+│   ├── options.lua      # 学習特化オプション (追加)
+│   └── ...              # LazyVim標準ファイル
+└── plugins/             # LazyVim標準 + 学習支援追加
+    ├── learning.lua     # 学習支援プラグイン (追加)
+    ├── project.lua      # プロジェクト管理強化 (追加)
+    └── ...              # LazyVim標準プラグイン
 ```
 
 ## 🚀 適用方法
@@ -64,19 +78,19 @@ nvim
 - **ヒント表示**: 初心者向けのヒント機能
 - **キーストローク記録**: 操作の振り返り機能
 
-### 日本語環境最適化
+### 学習環境最適化
 
-- **日本語フォント設定**: 日本語表示の最適化
-- **日本語ファイル名対応**: 日本語ファイル名の完全サポート
-- **コメント支援**: 日本語コメントの入力支援
-- **ドキュメント翻訳**: ヘルプの日本語化
+- **日本語表示対応**: 日本語コメント・ファイル名の完全サポート
+- **視覚的学習支援**: ヤンクハイライト延長、キーストローク表示
+- **学習進捗管理**: レッスン完了追跡、セッション復元
+- **自動ヒント表示**: ファイルタイプ別の学習ヒント
 
 ### プロジェクト開発強化
 
-- **プロジェクトテンプレート**: よく使うプロジェクト構造
-- **タスクランナー統合**: npm、cargo、makeとの連携
-- **デバッグ設定**: JavaScript/TypeScript/Python等のデバッグ
-- **テスト統合**: Jest、pytest等のテストフレームワーク対応
+- **プロジェクト自動検出**: Git、package.json、Cargo.toml等の認識
+- **セッション管理**: 作業状態の自動保存・復元
+- **ターミナル統合**: フローティング・分割ターミナル
+- **タスクランナー**: プロジェクト別タスク実行環境
 
 ## 🎨 カスタマイズ例
 
@@ -89,22 +103,18 @@ vim.g.show_hints = true
 vim.g.track_keystrokes = true
 ```
 
-### 2. 日本語環境の設定
+### 2. 学習支援キーマップの活用
 
 ```lua
--- lua/plugins/japanese.lua
-return {
-  {
-    "vim-skk/skkeleton",
-    dependencies = { "vim-denops/denops.vim" },
-    config = function()
-      -- SKK設定
-    end,
-  }
-}
+-- lua/config/keymaps.lua
+-- 学習専用キーマップが自動で利用可能
+-- <leader>ll - レッスンブラウザー
+-- <leader>lp - 学習進捗表示
+-- <leader>lt - ランダムヒント
+-- <leader>l? - 緊急ヘルプ
 ```
 
-### 3. プロジェクト設定の追加
+### 3. プロジェクト管理の設定
 
 ```lua
 -- lua/plugins/project.lua

@@ -78,9 +78,17 @@ nvim README.md
 
 3. 学習支援機能を有効化（オプション）
 ```bash
-# LazyVimカスタマイズを適用
+# LazyVim学習支援カスタマイズを適用
 cp -r config/lazyvim-customization/lua/* ~/.config/nvim/lua/
+# Neovimを再起動してプラグインをインストール
+nvim
 ```
+
+**学習支援機能**:
+- `<leader>ll` - レッスンブラウザー
+- `<leader>lp` - 学習進捗表示
+- `<leader>lt` - ランダムヒント
+- `<leader>l?` - 緊急ヘルプ
 
 ## 📂 プロジェクト構成
 
@@ -100,13 +108,28 @@ lazyvim-learning/
 
 ```
 XX-lesson-name/
-├── README.md        # レッスン概要・学習目標
-├── guide.md         # 詳細な操作解説
-├── practice/        # 練習用ファイル
-│   ├── start/       # 開始時の状態
-│   └── examples/    # 操作例の結果
-├── exercises.md     # 練習問題
-└── tips.md         # ヒントとよくある間違い
+├── README.md            # レッスン概要・学習目標
+├── guide.md             # 詳細な操作解説
+├── practice-files/      # 練習用ファイル
+│   ├── sample.lua       # Lua練習ファイル
+│   └── sample.md        # Markdown練習ファイル
+├── exercises/           # エクササイズ
+│   └── exercise-01.md   # 段階的練習問題
+└── tips.md             # ヒントとトラブルシューティング
+```
+
+## 🔧 学習支援機能（オプション）
+
+```
+config/lazyvim-customization/
+└── lua/
+    ├── config/
+    │   ├── options.lua      # 学習特化設定
+    │   ├── keymaps.lua      # 学習支援キーマップ  
+    │   └── autocmds.lua     # 学習環境自動化
+    └── plugins/
+        ├── learning.lua     # 学習支援プラグイン
+        └── project.lua      # プロジェクト管理強化
 ```
 
 ## 🎓 学習の進め方
