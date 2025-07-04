@@ -1,0 +1,29 @@
+HJKL Movement Practice
+=====================
+
+Navigate to each 'x' mark using only hjkl keys and replace it with '*'
+
+Start here
+    |
+    v
+    x
+
+         x
+                    x
+
+    x         x         x
+
+
+                x
+
+       x              x
+                           x
+
+    x      x      x      x
+
+
+           x
+      x         x
+           x
+
+Goal: Replace all 'x' characters with '*' using hjkl movement and r* command

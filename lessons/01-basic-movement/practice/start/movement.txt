@@ -1,0 +1,44 @@
+Welcome to Neovim! This file is for practicing basic movement and modes.
+
+First, let's practice moving around with hjkl keys:
+- Use h to move left
+- Use j to move down  
+- Use k to move up
+- Use l to move right
+
+Try navigating to different words in this paragraph using the hjkl keys.
+Notice how you can move character by character through the text.
+
+Now let's practice word-based movement:
+The quick brown fox jumps over the lazy dog.
+Use w to jump forward word by word.
+Use b to jump backward word by word.
+Use e to jump to the end of words.
+
+Practice line movement commands:
+    This line starts with spaces. Use ^ to jump to the first non-blank character.
+Use 0 to jump to the beginning of the line.
+Use $ to jump to the end of this line right here.
+
+Let's practice entering Insert mode:
+[] <- Position your cursor between these brackets and press i to insert
+() <- Position your cursor after ( and press a to append
+{} <- Position your cursor on { and press A to append at line end
+
+Here's a list where you can practice o and O commands:
+1. First item
+2. Second item
+3. Third item
+
+Practice deletion:
+Delete this x character using x command
+Delete this whole line using dd command
+Delete this word using dw command
+
+Remember:
+- Press ESC to return to Normal mode after inserting text
+- Use :w to save your changes
+- Use :q to quit (or :q! to quit without saving)
+- Use u to undo any mistakes
+
+Happy practicing!

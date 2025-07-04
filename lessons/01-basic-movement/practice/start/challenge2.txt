@@ -1,0 +1,22 @@
+Minimum Keystrokes Challenge
+============================
+
+Complete these transformations with the minimum number of keystrokes:
+
+Task 1: Add semicolons to all lines
+const a = 1
+const b = 2  
+const c = 3
+
+Task 2: Wrap each word in quotes
+hello world foo bar
+
+Task 3: Convert to arrow function
+function add(a, b) {
+    return a + b;
+}
+
+Task 4: Add commas between items
+apple orange banana grape
+
+Record your keystrokes for each task!

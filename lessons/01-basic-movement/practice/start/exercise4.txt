@@ -1,0 +1,32 @@
+Deletion Practice
+=================
+
+Practice using x, dd, and dw commands to clean up this code:
+
+// Remove extra characters using 'x'
+function addxNumbers(a, b) {
+    returnx a +x b;
+}
+
+// Delete entire lines that are marked for deletion using 'dd'
+function processData(data) {
+    // DELETE THIS LINE
+    console.log("Processing...");
+    // DELETE THIS LINE TOO
+    
+    if (!data) {
+        return null;
+    }
+    // AND DELETE THIS LINE
+    
+    return data.map(item => item * 2);
+}
+
+// Delete unnecessary words using 'dw'
+const message = "Hello extra wonderful extra world!";
+const unnecessary config = { verbose: true };
+
+// Fix this array by removing duplicates
+const numbers = [1, 2, 2, 3, 4, 4, 4, 5];
+
+// Remember: Use 'u' to undo if you make a mistake!

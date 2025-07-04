@@ -1,0 +1,27 @@
+Speed Challenge: 30 Second Edit
+================================
+
+Transform this messy function into clean code in under 30 seconds!
+
+fnction getUserData  (  userId  )  {
+    
+    
+    if(!userId){
+        retrun null;
+    }
+    
+    const user = databse.find(u=>u.id===userId);
+    
+    
+    if(!user){
+        throw new Eror('User not found');
+    }
+    
+    return {
+        id:user.id,
+        nam:user.name,
+        emal:user.email
+    };
+    
+    
+}

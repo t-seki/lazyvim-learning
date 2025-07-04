@@ -1,0 +1,41 @@
+Comprehensive Practice
+=====================
+
+Fix and complete this JavaScript code using all the commands you've learned:
+
+clas TodoList {  // Fix the typo
+    constructor() {
+        // TODO: Initialize empty todos array
+        
+    }
+    
+    addTodo(text) {
+        // TODO: Create todo object with id, text, and completed properties
+        
+        
+        // TODO: Add todo to array
+        
+    }
+    
+    
+    
+    removeTodo(id) {  // Remove empty lines above
+        const index = this.todos.findIndex(todo => todo.id === id);
+        if (index !== -1) {
+            this.todos.splice(index, 1);
+        
+    }  // Fix the missing closing brace
+    
+    toggleTodo(id) {
+        const todo = this.todos.find(todo => todo.id == id);  // Fix comparison
+        if (todo) {
+            todo.completed = !todo.completed;
+        }
+    }
+    
+    // Add a method to get all todos
+    
+}
+
+// Export the class
+module.export = TodoList;  // Fix the typo
