@@ -1,0 +1,107 @@
+Search and Replace Practice File
+================================
+
+Basic Search Practice
+---------------------
+
+Search for the word "function" in this file using /function
+Try searching backwards with ?function
+Use n and N to navigate between matches
+
+function calculateTotal(items) {
+    let total = 0;
+    for (const item of items) {
+        total += item.price;
+    }
+    return total;
+}
+
+function processUser(userData) {
+    if (!userData) return null;
+    return {
+        id: userData.id,
+        name: userData.name.trim(),
+        email: userData.email.toLowerCase()
+    };
+}
+
+function validateInput(input) {
+    return input && input.length > 0;
+}
+
+Word Search Practice
+-------------------
+
+Place your cursor on "calculateTotal" and use * to find all occurrences
+Place your cursor on "userData" and use # to search backwards
+
+The calculateTotal function is used in many places.
+First, calculateTotal processes the items array.
+Then, calculateTotal returns the final result.
+Always validate input before calling calculateTotal.
+
+Variable Names for Practice
+---------------------------
+
+userId appears multiple times here
+const userId = getUserId();
+console.log("Current userId:", userId);
+updateUser(userId, newData);
+logActivity(userId, "login");
+
+String Search Practice
+---------------------
+
+Search for quoted strings using /"[^"]*"
+Search for console statements using /console\.
+
+const message = "Hello, World!";
+const error = "Error occurred";
+const debug = "Debug information";
+
+console.log(message);
+console.error(error);
+console.debug(debug);
+
+Pattern Matching Practice
+------------------------
+
+Find all numbers using /\d\+
+Find all variable declarations using /\(var\|let\|const\)
+
+var oldStyle = 42;
+let newStyle = 100;
+const CONSTANT = 3.14;
+let count = 0;
+var total = 250;
+
+HTML Tags Practice
+-----------------
+
+Search for opening tags: /<[^>]*>
+Search for closing tags: /<\/[^>]*>
+
+<div class="container">
+    <h1>Title</h1>
+    <p>This is a paragraph with <strong>bold text</strong></p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+</div>
+
+Error Keywords Practice
+----------------------
+
+Search for error-related keywords: /\(error\|exception\|fail\|throw\)
+
+try {
+    processData();
+} catch (error) {
+    console.error("An error occurred:", error);
+    throw new Error("Processing failed");
+}
+
+if (validation.fail) {
+    throw new exception("Validation failed");
+}
