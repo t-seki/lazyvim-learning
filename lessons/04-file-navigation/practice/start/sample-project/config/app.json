@@ -1,0 +1,118 @@
+{
+  "app": {
+    "name": "Sample Project",
+    "version": "1.2.3",
+    "description": "A sample project for Neovim file navigation practice",
+    "author": "Development Team"
+  },
+  "api": {
+    "baseUrl": "https://api.example.com/v1",
+    "timeout": 10000,
+    "retryAttempts": 3,
+    "retryDelay": 1000
+  },
+  "authentication": {
+    "tokenKey": "authToken",
+    "sessionTimeout": 3600000,
+    "refreshThreshold": 300000,
+    "loginEndpoint": "/auth/login",
+    "logoutEndpoint": "/auth/logout",
+    "validateEndpoint": "/auth/validate"
+  },
+  "features": {
+    "enableDashboard": true,
+    "enableUserManagement": true,
+    "enableProjectManagement": true,
+    "enableReporting": false,
+    "enableNotifications": true,
+    "enableFileUpload": true,
+    "maxFileSize": 10485760,
+    "allowedFileTypes": [".jpg", ".png", ".pdf", ".doc", ".docx"]
+  },
+  "ui": {
+    "theme": "light",
+    "language": "en",
+    "dateFormat": "YYYY-MM-DD",
+    "timeFormat": "HH:mm:ss",
+    "currency": "USD",
+    "itemsPerPage": 20,
+    "enableAnimations": true,
+    "compactMode": false
+  },
+  "cache": {
+    "enableCache": true,
+    "cacheTimeout": 300000,
+    "maxCacheSize": 100,
+    "cacheStrategies": {
+      "userData": "memory",
+      "apiResponses": "sessionStorage",
+      "staticAssets": "localStorage"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "enableConsoleLog": true,
+    "enableRemoteLog": false,
+    "remoteLogEndpoint": "/logs",
+    "logCategories": ["auth", "api", "ui", "errors"],
+    "maxLogEntries": 1000
+  },
+  "development": {
+    "enableDebugMode": false,
+    "enableMockData": true,
+    "enableHotReload": true,
+    "apiMockDelay": 500,
+    "showPerformanceMetrics": false,
+    "verboseLogging": false
+  },
+  "production": {
+    "enableCompression": true,
+    "enableCDN": true,
+    "cdnBaseUrl": "https://cdn.example.com",
+    "enableAnalytics": true,
+    "analyticsTrackingId": "GA-XXXXXXXX",
+    "enableErrorReporting": true,
+    "errorReportingEndpoint": "/errors"
+  },
+  "security": {
+    "enableCSRFProtection": true,
+    "enableXSSProtection": true,
+    "enableContentSecurityPolicy": true,
+    "allowedOrigins": ["https://example.com", "https://app.example.com"],
+    "sessionCookieSecure": true,
+    "sessionCookieSameSite": "strict"
+  },
+  "database": {
+    "connectionTimeout": 5000,
+    "queryTimeout": 30000,
+    "poolSize": 10,
+    "enableQueryLogging": false,
+    "enableSlowQueryAlert": true,
+    "slowQueryThreshold": 1000
+  },
+  "email": {
+    "provider": "smtp",
+    "host": "smtp.example.com",
+    "port": 587,
+    "secure": true,
+    "from": "noreply@example.com",
+    "templates": {
+      "welcome": "welcome-email.html",
+      "resetPassword": "reset-password.html",
+      "notification": "notification.html"
+    }
+  },
+  "monitoring": {
+    "enableHealthCheck": true,
+    "healthCheckInterval": 60000,
+    "enableMetrics": true,
+    "metricsEndpoint": "/metrics",
+    "enableAlerts": true,
+    "alertThresholds": {
+      "responseTime": 1000,
+      "errorRate": 0.05,
+      "memoryUsage": 0.8,
+      "cpuUsage": 0.8
+    }
+  }
+}
