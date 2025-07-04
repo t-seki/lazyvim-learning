@@ -1,58 +1,84 @@
-# Neovim 開発環境学習アプリケーション
+# LazyVim 学習アプリケーション
 
-モダンなNeovim開発環境（Lazy.nvimベース）で、vim/neovimの基本操作から実際のプロジェクト開発での実践的な使い方までを学習できるアプリケーションです。
+LazyVimディストリビューションを使って、vim/neovimの基本操作から実際のプロジェクト開発での実践的な使い方までを学習できるアプリケーションです。
 
 ## 🎯 対象者
 
 - **完全初心者**: vim/neovimを触ったことがない人
 - **中級者**: 基本は知ってるけどモダンな開発環境での活用法を学びたい人
-- **上級者**: Lazy.nvim環境でのより効率的なワークフローを身につけたい人
+- **上級者**: LazyVim環境でのより効率的なワークフローを身につけたい人
 
 ## 📚 学習内容
 
-### 基本編（vim/neovim操作）
-- **01. 基本移動・編集**: モード概念、hjkl移動、基本編集
-- **02. 編集の基礎**: 効率的な移動、コピー・ペースト
-- **03. 検索・置換**: 検索、置換操作
-- **04. ファイル・ウィンドウ操作**: バッファ、ウィンドウ、タブの概念と操作
+### Phase 1: LazyVim基礎編
+- **01. LazyVim基本**: LazyVimの概要とナビゲーション
+- **02. ファイル管理**: Telescope、Neo-tree、Buffer管理
+- **03. コーディング機能**: LSP、補完、フォーマッティング
+- **04. Git統合**: LazyGitとGit統合機能
 
-### 実践編（開発準備中）
-- **05. LSP基本操作**: コード補完、エラー確認、定義ジャンプ
-- **06. Telescope活用**: ファイル検索、grep、LSP機能との連携
-- **07. Git統合ワークフロー**: gitsigns、lazygitを使ったGit操作
-- **08. プロジェクト開発総合**: 実際のTypeScriptプロジェクトでの開発作業
+### Phase 2: 実践編（開発準備中）
+- **05. プロジェクト設定**: プロジェクト固有設定
+- **06. デバッグ・テスト**: DAP、テスト統合
+- **07. カスタマイズ**: LazyVimのカスタマイズ方法
+- **08. 高度なワークフロー**: 高度な開発ワークフロー
+
+### Phase 3: 実プロジェクト（開発準備中）
+- **09. TypeScript開発**: TypeScript開発の実践
+- **10. フルスタック開発**: フルスタック開発体験
 
 ## 🚀 始め方
 
 ### 前提条件
 - Neovim (>= 0.9.0) がインストール済み
-- Lazy.nvimベースの設定が完了済み
-- 基本的なプラグイン（LSP、Telescope、Treesitter等）がセットアップ済み
+- **LazyVimが完全にセットアップ済み**
+- Git、ripgrep、Node.js等の基本ツールがインストール済み
+
+### LazyVimのセットアップ
+LazyVimがまだセットアップされていない場合：
+
+1. 既存のNeovim設定をバックアップ
+```bash
+mv ~/.config/nvim{,.bak}
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+```
+
+2. LazyVimをインストール
+```bash
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+```
+
+3. Neovimを起動してプラグインをインストール
+```bash
+nvim
+```
 
 ### 学習の開始
 1. このリポジトリをクローン
 ```bash
-git clone https://github.com/yourusername/neovim-dev-learning.git
-cd neovim-dev-learning
+git clone https://github.com/yourusername/lazyvim-learning.git
+cd lazyvim-learning
 ```
 
 2. 最初のレッスンから開始
 ```bash
-cd lessons/01-basic-movement
+cd lessons/01-lazyvim-basics
 nvim README.md
 ```
 
 ## 📂 プロジェクト構成
 
 ```
-neovim-dev-learning/
+lazyvim-learning/
 ├── lessons/                    # レッスンコンテンツ
-│   ├── 01-basic-movement/      # 基本移動・編集
-│   ├── 02-editing-fundamentals/# 基本編集操作
-│   ├── 03-search-replace/      # 検索・置換
-│   └── 04-file-navigation/     # ファイル・ウィンドウ操作
-├── config/                     # 設定例
-│   └── lazy-setup-example/     # 推奨Lazy.nvim設定
+│   ├── 01-lazyvim-basics/      # LazyVim基本操作
+│   ├── 02-file-management/     # ファイル管理（Telescope/Neo-tree）
+│   ├── 03-coding-features/     # コーディング機能（LSP/補完）
+│   └── 04-git-workflow/        # Git統合（LazyGit）
+├── config/                     # カスタマイズ例
+│   └── lazyvim-customization/  # LazyVimカスタマイズ例
 └── README.md                   # このファイル
 ```
 
@@ -71,10 +97,10 @@ XX-lesson-name/
 
 ## 🎓 学習のコツ
 
-1. **実際に手を動かす**: 読むだけでなく、必ず自分で操作してみる
-2. **繰り返し練習**: 筋肉記憶に定着するまで繰り返す
-3. **段階的に進める**: 基本をマスターしてから次のレッスンへ
-4. **カスタマイズは後回し**: まずは標準的な操作を習得
+1. **実際に手を動かす**: 読むだけでなく、必ずLazyVimで操作してみる
+2. **which-keyを活用**: `<Space>`キーでヘルプを表示して覚える
+3. **段階的に進める**: LazyVimの標準機能をマスターしてからカスタマイズへ
+4. **プロジェクトベース学習**: 実際のコードで練習する
 
 ## 🤝 貢献
 
