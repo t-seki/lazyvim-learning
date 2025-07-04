@@ -58,8 +58,8 @@ LazyVimの最も重要な機能は**which-key**です。
 
 | キー | 動作 | 説明 |
 |------|------|------|
-| `<leader>fg` | プロジェクト全体検索 | Live grep (全ファイル横断検索) |
-| `<leader>/` | バッファ内検索 | 現在のファイル内検索 |
+| `<leader>fg` | Live Grep | プロジェクト全体でのリアルタイム検索 |
+| `<leader>/` | Grep (Root Dir) | プロジェクトルートディレクトリでのGrep検索 |
 | `<leader>ss` | シンボル検索 | 関数・変数名検索 |
 | `gd` | 定義ジャンプ | Go to definition |
 | `gr` | 参照表示 | Show references |
@@ -102,8 +102,8 @@ LazyVimの最も重要な機能は**which-key**です。
 ### 練習3: 検索機能
 
 1. このREADME.mdを開いた状態で：
-   - `<leader>/`で「練習」を現在ファイル内検索
-   - `<leader>fg`でプロジェクト全体から「LazyVim」を検索
+   - `<leader>/`でプロジェクトルートから「練習」をGrep検索
+   - `<leader>fg`でプロジェクト全体から「LazyVim」をLive Grep検索
 
 ### 練習4: ヘルプシステム
 
