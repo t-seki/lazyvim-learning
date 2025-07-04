@@ -4,9 +4,13 @@
 
 LazyVimの基本的な操作とキーマップを習得し、効率的にファイル操作ができるようになること。
 
+**推奨**: このエクササイズは [quick-start.md](../quick-start.md) と [guided-practice.md](../guided-practice.md) を完了してから取り組むことをお勧めします。
+
 ## 📋 前提条件
 
 - LazyVimが正常に起動すること
+- [quick-start.md](../quick-start.md) の3つの魔法を体験済み
+- [guided-practice.md](../guided-practice.md) で基本操作を練習済み
 - 基本的なvimモード（Normal, Insert, Visual）を理解していること
 
 ## 🏆 達成基準
@@ -168,4 +172,4 @@ practice-files/sample.mdで以下を実行：
 
 ---
 
-💡 **次のステップ**: レッスン02ではTelescopeとNeo-treeを使ったファイル管理の詳細を学習します。
+💡 **次のステップ**: [02-efficient-editing](../../02-efficient-editing/) でLazyVimの編集機能を深掘りします。

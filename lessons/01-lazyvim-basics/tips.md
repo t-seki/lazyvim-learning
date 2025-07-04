@@ -1,5 +1,7 @@
 # 💡 LazyVim 基本操作のコツ
 
+**このファイルについて**: [quick-start.md](quick-start.md) や [guided-practice.md](guided-practice.md) で基本操作を学んだ後に、さらなる効率化のコツを学べます。
+
 ## 🚀 効率アップのコツ
 
 ### 1. which-keyを活用する
@@ -199,9 +201,9 @@ wk.register({
 
 基本操作に慣れたら：
 
-1. **レッスン02**: ファイル管理の詳細
-2. **レッスン03**: コーディング機能の活用
-3. **レッスン04**: Git ワークフローの最適化
+1. **[02-efficient-editing](../02-efficient-editing/)**: LSPやTreesitterを活用した編集機能
+2. **[03-search-navigation](../03-search-navigation/)**: TelescopeとLSP統合検索
+3. **[04-project-management](../04-project-management/)**: プロジェクト管理とセッション機能
 
 **重要**: 基礎をしっかり固めてから次に進むことが上達の秘訣です！
 
