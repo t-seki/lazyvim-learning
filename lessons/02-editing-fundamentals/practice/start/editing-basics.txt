@@ -1,0 +1,58 @@
+Editing Fundamentals Practice
+=============================
+
+Practice using f, t, F, T commands:
+-----------------------------------------
+Navigate to specific characters in this line: (parentheses), [brackets], {braces}, "quotes"
+Use fx to jump to x, then ; to repeat, and , to go back
+
+Practice deletion with d operator:
+-----------------------------------------
+Delete unnecessary words in this extra sentence with too many unnecessary words.
+Remove the (error) text inside these parentheses but keep the parentheses.
+Delete from here → to the end of this line using d$
+
+Practice change with c operator:
+-----------------------------------------
+Change oldVariable to newVariable in this line.
+Replace the "old string" with a new string using ci"
+Transform function oldFunction() { return old; } to use 'new' instead of 'old'
+
+Practice yanking and pasting:
+-----------------------------------------
+Copy this line and paste it below (use yy and p)
+Copy just this [WORD] and paste it here: ___
+Duplicate this entire function:
+function original() {
+    return "copy me";
+}
+
+Practice with text objects:
+-----------------------------------------
+Delete the content inside these quotes: "delete only this text"
+Change everything inside these parentheses: (change all of this)
+Delete this entire <tag>including the tags</tag>
+Modify the arguments in this function: calculate(oldArg1, oldArg2, oldArg3)
+
+Practice visual mode selection:
+-----------------------------------------
+Select and delete these three words
+Select these
+three lines
+and delete them
+
+Use visual block mode to add semicolons to these lines:
+const a = 1
+const b = 2
+const c = 3
+const d = 4
+
+Practice the dot command:
+-----------------------------------------
+Change this_word to another word, then use . to change this_word and this_word
+
+Transform these variables from camelCase to snake_case:
+firstName -> first_name (manually)
+lastName -> ??? (use dot command)
+phoneNumber -> ??? (use dot command)
+emailAddress -> ??? (use dot command)

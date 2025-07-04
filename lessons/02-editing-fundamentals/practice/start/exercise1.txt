@@ -1,0 +1,62 @@
+Text Object Practice
+====================
+
+Task: Use text objects to efficiently edit this code
+
+1. String Manipulation
+----------------------
+const greeting = "Hello, old world!";
+const name = "Replace this name";
+const message = `This is an old template string`;
+
+Instructions:
+- Change "old world" to "new world" using ci"
+- Replace the entire name string using ca"
+- Update the template string content using ci`
+
+2. Function Arguments
+---------------------
+function processData(oldParam1, oldParam2, oldParam3) {
+    return calculate(oldParam1 + oldParam2, oldParam3);
+}
+
+getUserInfo("outdated", "parameters", "here");
+
+Instructions:
+- Change all function parameters at once using ci(
+- Update the getUserInfo arguments using ci(
+
+3. Object Properties
+--------------------
+const config = {
+    oldKey: "value1",
+    outdatedProperty: "value2",
+    deprecatedOption: "value3"
+};
+
+const settings = {apiUrl: "http://old-api.com", timeout: 3000, retries: 5};
+
+Instructions:
+- Change the entire config object content using ci{
+- Modify just the apiUrl value
+
+4. Array Elements
+-----------------
+const oldItems = ["item1", "item2", "item3", "item4"];
+const matrix = [[1, 2], [3, 4], [5, 6]];
+
+Instructions:
+- Replace all array elements using ci[
+- Change the middle array [3, 4] in matrix
+
+5. HTML/JSX Elements
+--------------------
+<div className="old-class">
+    <span>Old content here</span>
+    <p>Another old paragraph</p>
+</div>
+
+Instructions:
+- Change the div className value
+- Replace the span's inner content using cit
+- Delete the entire p tag using dat

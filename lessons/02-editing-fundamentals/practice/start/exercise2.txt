@@ -1,0 +1,61 @@
+Operator and Motion Combinations
+=================================
+
+Task: Practice combining operators (d, c, y) with various motions
+
+1. Word-based Operations
+------------------------
+Delete these unnecessary extra words from this overly verbose sentence.
+Change oldMethod to newMethod throughout this line: obj.oldMethod().oldMethod().oldMethod()
+Copy this important phrase and paste it at the marked location below.
+
+PASTE HERE: _______________
+
+2. Line Operations  
+------------------
+This line should be deleted entirely.
+This line needs to be changed to something else.
+Copy this entire line and duplicate it below.
+
+3. Using f/t Motions
+--------------------
+Remove everything after the comma, but keep the comma itself.
+Delete from here until the semicolon at the end;
+Change the text between the equals sign = and the semicolon;
+
+const value = "change only this part";
+const result = calculate(a, b, c); // delete from 'calculate' to before semicolon
+
+4. Paragraph Operations
+-----------------------
+This is the first paragraph that contains some text.
+It has multiple lines that should be treated as one unit.
+Delete this entire paragraph using d}.
+
+This is the second paragraph.
+Copy this entire paragraph using y}.
+Then paste it below.
+
+5. Advanced Combinations
+------------------------
+function oldFunction(param1, param2) {
+    // Delete this entire function body
+    const result = param1 + param2;
+    console.log("Old implementation");
+    return result;
+}
+
+// Change each URL in these strings
+const api1 = "https://old-api.com/v1/users";
+const api2 = "https://old-api.com/v1/posts";  
+const api3 = "https://old-api.com/v1/comments";
+
+6. Counting with Operations
+----------------------------
+Delete exactly 3 words from here: one two three four five six
+Change the next 2 occurrences of 'x': x-coordinate and x-value in x-axis
+Copy 4 lines starting from this line.
+Line 2
+Line 3
+Line 4
+Line 5

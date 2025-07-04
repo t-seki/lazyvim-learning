@@ -1,0 +1,70 @@
+Real-World Refactoring Exercise
+================================
+
+Refactor this JavaScript code using the editing techniques you've learned:
+
+// Old API client implementation
+var APIClient = function(baseURL) {
+    this.baseURL = baseURL;
+    this.timeout = 5000;
+};
+
+APIClient.prototype.get = function(endpoint) {
+    var url = this.baseURL + "/" + endpoint;
+    console.log("Making request to: " + url);
+    
+    return fetch(url, {
+        method: "GET",
+        timeout: this.timeout
+    });
+};
+
+APIClient.prototype.post = function(endpoint, data) {
+    var url = this.baseURL + "/" + endpoint;
+    console.log("Posting data to: " + url);
+    
+    return fetch(url, {
+        method: "POST",
+        body: JSON.stringify(data),
+        timeout: this.timeout
+    });
+};
+
+APIClient.prototype.put = function(endpoint, data) {
+    var url = this.baseURL + "/" + endpoint;
+    console.log("Updating data at: " + url);
+    
+    return fetch(url, {
+        method: "PUT",
+        body: JSON.stringify(data),
+        timeout: this.timeout
+    });
+};
+
+APIClient.prototype.delete = function(endpoint) {
+    var url = this.baseURL + "/" + endpoint;
+    console.log("Deleting from: " + url);
+    
+    return fetch(url, {
+        method: "DELETE",
+        timeout: this.timeout
+    });
+};
+
+// Usage
+var client = new APIClient("http://api.example.com");
+client.get("users");
+client.post("users", {name: "John", email: "john@example.com"});
+client.put("users/123", {name: "John Doe"});
+client.delete("users/123");
+
+/* 
+Refactoring Tasks:
+1. Convert to ES6 class syntax
+2. Use const/let instead of var
+3. Convert string concatenation to template literals
+4. Use arrow functions where appropriate
+5. Add async/await to methods
+6. Extract the URL building logic into a helper method
+7. Use object destructuring in method parameters
+*/

@@ -1,0 +1,81 @@
+Visual Mode Mastery
+===================
+
+Task: Use different visual modes to perform complex selections and edits
+
+1. Character-wise Visual Mode (v)
+---------------------------------
+Select and delete only the error codes from this log:
+[ERROR-001] Database connection failed
+[ERROR-002] Invalid user input  
+[ERROR-003] Timeout occurred
+
+Select and change the status values:
+Status: PENDING -> Status: COMPLETED
+Status: PENDING -> Status: COMPLETED
+Status: PENDING -> Status: COMPLETED
+
+2. Line-wise Visual Mode (V)
+----------------------------
+Delete these commented lines:
+// TODO: Remove this old code
+// function deprecated() {
+//     return "old implementation";
+// }
+Keep this active code
+
+Select and indent this block:
+if (condition) {
+console.log("Line 1");
+console.log("Line 2");
+console.log("Line 3");
+}
+
+3. Block Visual Mode (Ctrl-v)
+-----------------------------
+Add quotes around each fruit name:
+apple
+banana
+orange
+grape
+
+Add semicolons at the end of each line:
+const a = 1
+const b = 2
+const c = 3
+const d = 4
+
+Comment out multiple lines by adding // :
+console.log("Line 1")
+console.log("Line 2")
+console.log("Line 3")
+console.log("Line 4")
+
+4. Complex Visual Selections
+----------------------------
+Transform this list into an array:
+item1
+item2
+item3
+item4
+
+Expected result: ["item1", "item2", "item3", "item4"]
+
+Convert these function calls to async:
+getData()
+processData()
+saveData()
+validateData()
+
+Expected: await getData(), await processData(), etc.
+
+5. Visual Mode with Text Objects
+--------------------------------
+const users = [
+    { name: "Alice", age: 30 },
+    { name: "Bob", age: 25 },
+    { name: "Charlie", age: 35 }
+];
+
+Task: Select and copy just the array content (inside the brackets)
+Task: Select and delete the second object entirely
