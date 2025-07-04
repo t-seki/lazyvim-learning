@@ -40,7 +40,7 @@ LazyVimは複数の検索システムを統合して提供します：
 | ファイル探索 | Telescope | `<leader>ff` |
 | Gitファイル探索 | Telescope | `<leader>fg` |
 | テキスト検索 | Grep (Root Dir) | `<leader>/` |
-| シンボル検索 | Aerial | `<leader>ss` |
+| シンボル検索 | Goto Symbol (Aerial) | `<leader>ss` |
 | 定義確認 | LSP | `gd`, `gr` |
 | バッファ内検索 | vim標準 | `/`, `?` |
 | プロジェクト置換 | spectre.nvim | `<leader>sr` |

@@ -32,7 +32,7 @@
 | ファイル名検索 | Telescope | `<leader>ff` | 部分一致OK |
 | Gitファイル検索 | Find Files (git-files) | `<leader>fg` | Git管理下ファイル |
 | プロジェクト内容検索 | Grep (Root Dir) | `<leader>/` | 正規表現対応 |
-| シンボル検索 | LSP symbols | `<leader>ss` | 関数・変数名 |
+| シンボル検索 | Goto Symbol (Aerial) | `<leader>ss` | 関数・変数名 |
 
 ### 4. モード切り替えのコツ
 
