@@ -30,8 +30,8 @@
 | 目的 | ツール | キー | 備考 |
 |------|--------|------|------|
 | ファイル名検索 | Telescope | `<leader>ff` | 部分一致OK |
-| ファイル内容検索 | Live grep | `<leader>fg` | 正規表現対応 |
-| 現在ファイル内検索 | Buffer search | `<leader>/` | 高速 |
+| Gitファイル検索 | Find Files (git-files) | `<leader>fg` | Git管理下ファイル |
+| プロジェクト内容検索 | Grep (Root Dir) | `<leader>/` | 正規表現対応 |
 | シンボル検索 | LSP symbols | `<leader>ss` | 関数・変数名 |
 
 ### 4. モード切り替えのコツ
@@ -57,7 +57,7 @@ Visual → Normal: <Esc>
 ```
 1. プロジェクト全体確認: <leader>e
 2. ファイル検索: <leader>ff
-3. 内容検索: <leader>fg
+3. Gitファイル検索: <leader>fg
 4. ファイル開く: Enter
 5. 編集: i (Insert mode)
 6. 保存: <Esc> :w <Enter>

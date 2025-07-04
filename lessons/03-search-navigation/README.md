@@ -38,8 +38,9 @@ LazyVimは複数の検索システムを統合して提供します：
 | 目的 | 推奨方法 | キー |
 |------|----------|------|
 | ファイル探索 | Telescope | `<leader>ff` |
-| テキスト検索 | Telescope Live Grep | `<leader>fg` |
-| シンボル検索 | LSP + Telescope | `<leader>ss` |
+| Gitファイル探索 | Telescope | `<leader>fg` |
+| テキスト検索 | Grep (Root Dir) | `<leader>/` |
+| シンボル検索 | Aerial | `<leader>ss` |
 | 定義確認 | LSP | `gd`, `gr` |
 | バッファ内検索 | vim標準 | `/`, `?` |
 | プロジェクト置換 | spectre.nvim | `<leader>sr` |
@@ -68,9 +69,10 @@ LazyVimの検索・ナビゲーション機能をマスターすることで：
 | 操作 | 従来のvim | LazyVim |
 |------|-----------|---------|
 | ファイル検索 | `:find`で手動 | `<leader>ff`でファジー検索 |
-| テキスト検索 | `:grep`コマンド | `<leader>fg`でリアルタイムプレビュー |
-| 定義ジャンプ | タグファイル必要 | LSPで自動・正確 |
-| 参照検索 | 手動grep | `gr`でTelescope一覧表示 |
+| Gitファイル検索 | 手動で管理 | `<leader>fg`でGit管理ファイル検索 |
+| テキスト検索 | `:grep`コマンド | `<leader>/`でプロジェクト全体検索 |
+| 定義ジャンプ | タグファイル必要 | `gd`でLSP定義ジャンプ |
+| 参照検索 | 手動grep | `gr`で参照一覧表示 |
 | 複数ファイル置換 | 複雑なコマンド | spectre.nvimで安全・直感的 |
 
 ### 学習アプローチ

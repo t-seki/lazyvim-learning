@@ -47,11 +47,11 @@ LazyVimの最も重要な機能は**which-key**です。
 
 | キー | 動作 | 説明 |
 |------|------|------|
-| `<leader>e` | ファイルツリー表示/非表示 | Neo-tree（ファイルエクスプローラー） |
-| `<leader>ff` | ファイル検索 (Root Dir) | ルートディレクトリのファイル検索 |
-| `<leader>fg` | Git ファイル検索 | Git管理下のファイル検索 |
-| `<leader>fr` | 最近のファイル | Recent files |
-| `<leader>fb` | バッファ一覧 | 開いているファイル一覧 |
+| `<leader>e` | Explorer Snacks (root dir) | ファイルエクスプローラー |
+| `<leader>ff` | Find Files (Root Dir) | ルートディレクトリのファイル検索 |
+| `<leader>fg` | Find Files (git-files) | Git管理下のファイル検索 |
+| `<leader>fr` | Recent | 最近のファイル |
+| `<leader>fb` | Buffers | 開いているファイル一覧 |
 
 **練習**: 各キーを試して、ファイル操作に慣れましょう。
 
@@ -59,26 +59,30 @@ LazyVimの最も重要な機能は**which-key**です。
 
 | キー | 動作 | 説明 |
 |------|------|------|
-| `<leader>/` | テキスト検索 | Grep (Root Dir) - プロジェクト全体テキスト検索 |
-| `<leader>ss` | シンボル検索 | 関数・変数名検索 |
-| `gd` | 定義ジャンプ | Go to definition |
-| `gr` | 参照表示 | Show references |
+| `<leader>/` | Grep (Root Dir) | プロジェクト全体テキスト検索 |
+| `<leader>ss` | Goto Symbol (Aerial) | 関数・変数名検索 |
+| `gd` | Goto Definition | 定義へジャンプ |
+| `gr` | References | 参照箇所を表示 |
+| `K` | Hover | カーソル下の情報表示 |
 
 ### 4. ウィンドウ・タブ操作
 
 | キー | 動作 | 説明 |
 |------|------|------|
-| `<leader>w` | ウィンドウ操作 | ウィンドウ関連コマンド |
-| `<leader><tab>` | タブ操作 | タブ関連コマンド |
-| `<C-h/j/k/l>` | ウィンドウ移動 | ウィンドウ間の移動 |
+| `<leader>w` | Window commands | ウィンドウ関連コマンド |
+| `<leader><tab>` | Tab commands | タブ関連コマンド |
+| `<C-h>` | Go to Left Window | 左のウィンドウへ移動 |
+| `<C-j>` | Go to Lower Window | 下のウィンドウへ移動 |
+| `<C-k>` | Go to Upper Window | 上のウィンドウへ移動 |
+| `<C-l>` | Go to Right Window | 右のウィンドウへ移動 |
 
 ### 5. Git操作
 
 | キー | 動作 | 説明 |
 |------|------|------|
-| `<leader>gg` | LazyGit起動 | Git GUI |
-| `<leader>gf` | Git ファイル | Git管理下のファイル操作 |
-| `<leader>gc` | Git コミット | コミット作成 |
+| `<leader>gg` | GitUi (Root Dir) | Git GUI (LazyGit使用) |
+
+**注**: `<leader>gf`や`<leader>gc`などの追加Git操作は、LazyVimの設定によって異なる場合があります。
 
 ## 📝 実践練習
 

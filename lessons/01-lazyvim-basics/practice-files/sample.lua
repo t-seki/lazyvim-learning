@@ -31,8 +31,9 @@ function M.greet_user(name)
   return greeting
 end
 
--- 練習2: テキスト検索
--- '<leader>fg' で以下のキーワードを検索してみましょう：
+-- 練習2: ファイル検索
+-- '<leader>fg' でGitファイル検索を試してみましょう
+-- '<leader>/' でプロジェクト全体から以下のキーワードを検索：
 -- - "function"
 -- - "print"
 -- - "LazyVim"
