@@ -48,7 +48,8 @@ LazyVimの最も重要な機能は**which-key**です。
 | キー | 動作 | 説明 |
 |------|------|------|
 | `<leader>e` | ファイルツリー表示/非表示 | Neo-tree（ファイルエクスプローラー） |
-| `<leader>ff` | ファイル検索 | Telescope file finder |
+| `<leader>ff` | ファイル検索 (Root Dir) | ルートディレクトリのファイル検索 |
+| `<leader>fg` | Git ファイル検索 | Git管理下のファイル検索 |
 | `<leader>fr` | 最近のファイル | Recent files |
 | `<leader>fb` | バッファ一覧 | 開いているファイル一覧 |
 
@@ -58,8 +59,7 @@ LazyVimの最も重要な機能は**which-key**です。
 
 | キー | 動作 | 説明 |
 |------|------|------|
-| `<leader>fg` | Live Grep | プロジェクト全体でのリアルタイム検索 |
-| `<leader>/` | Grep (Root Dir) | プロジェクトルートディレクトリでのGrep検索 |
+| `<leader>/` | テキスト検索 | Grep (Root Dir) - プロジェクト全体テキスト検索 |
 | `<leader>ss` | シンボル検索 | 関数・変数名検索 |
 | `gd` | 定義ジャンプ | Go to definition |
 | `gr` | 参照表示 | Show references |
@@ -77,7 +77,7 @@ LazyVimの最も重要な機能は**which-key**です。
 | キー | 動作 | 説明 |
 |------|------|------|
 | `<leader>gg` | LazyGit起動 | Git GUI |
-| `<leader>gf` | Git ファイル | Git管理下のファイル検索 |
+| `<leader>gf` | Git ファイル | Git管理下のファイル操作 |
 | `<leader>gc` | Git コミット | コミット作成 |
 
 ## 📝 実践練習
@@ -102,8 +102,8 @@ LazyVimの最も重要な機能は**which-key**です。
 ### 練習3: 検索機能
 
 1. このREADME.mdを開いた状態で：
-   - `<leader>/`でプロジェクトルートから「練習」をGrep検索
-   - `<leader>fg`でプロジェクト全体から「LazyVim」をLive Grep検索
+   - `<leader>/`でプロジェクト全体から「練習」をテキスト検索
+   - `<leader>fg`でGit管理下のファイルから「LazyVim」を検索
 
 ### 練習4: ヘルプシステム
 
@@ -173,7 +173,8 @@ nvim .
 3. 以下の操作を練習：
    - ファイル作成（`a`で新規作成）
    - ファイル検索（`<leader>ff`）
-   - テキスト検索（`<leader>fg`）
+   - Gitファイル検索（`<leader>fg`）
+   - テキスト検索（`<leader>/`）
    - Git初期化（`<leader>gg`）
 
 ### チャレンジ: キーマップカスタマイズ
