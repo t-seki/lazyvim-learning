@@ -2,6 +2,14 @@
 
 LazyVimディストリビューションを使って、vim/neovimの基本操作から実際のプロジェクト開発での実践的な使い方までを学習できるアプリケーションです。
 
+## ✨ 特徴
+
+- 🚀 **LazyVim特化**: LazyVimの強力な機能を最大限活用した学習カリキュラム
+- 🎯 **実践重視**: 実際の開発作業を想定した練習とワークフロー
+- 📈 **段階的学習**: 基本操作から高度な機能まで体系的にステップアップ
+- 🔧 **学習支援**: カスタムキーマップとヒント機能でスムーズな学習体験
+- 🏗️ **プロジェクトベース**: 実際のコード編集を通じた実用的なスキル習得
+
 ## 🎯 対象者
 
 - **完全初心者**: vim/neovimを触ったことがない人
@@ -10,11 +18,11 @@ LazyVimディストリビューションを使って、vim/neovimの基本操作
 
 ## 📚 学習内容
 
-### Phase 1: LazyVim基礎編
-- **01. LazyVim基本**: LazyVimの概要とナビゲーション
-- **02. ファイル管理**: Telescope、Neo-tree、Buffer管理
-- **03. コーディング機能**: LSP、補完、フォーマッティング
-- **04. Git統合**: LazyGitとGit統合機能
+### Phase 1: LazyVim基礎編（完成）
+- **01. LazyVim基本操作**: LazyVimの概要、which-key、基本ナビゲーション
+- **02. 効率的編集操作**: LSP・Treesitter活用、自動補完・スニペット
+- **03. 検索とナビゲーション**: Telescope・LSP統合検索、安全な置換
+- **04. プロジェクト管理**: Neo-tree・プロジェクト管理・セッション機能
 
 ### Phase 2: 実践編（開発準備中）
 - **05. プロジェクト設定**: プロジェクト固有設定
@@ -68,18 +76,24 @@ cd lessons/01-lazyvim-basics
 nvim README.md
 ```
 
+3. 学習支援機能を有効化（オプション）
+```bash
+# LazyVimカスタマイズを適用
+cp -r config/lazyvim-customization/lua/* ~/.config/nvim/lua/
+```
+
 ## 📂 プロジェクト構成
 
 ```
 lazyvim-learning/
-├── lessons/                    # レッスンコンテンツ
-│   ├── 01-lazyvim-basics/      # LazyVim基本操作
-│   ├── 02-file-management/     # ファイル管理（Telescope/Neo-tree）
-│   ├── 03-coding-features/     # コーディング機能（LSP/補完）
-│   └── 04-git-workflow/        # Git統合（LazyGit）
-├── config/                     # カスタマイズ例
-│   └── lazyvim-customization/  # LazyVimカスタマイズ例
-└── README.md                   # このファイル
+├── lessons/                      # レッスンコンテンツ
+│   ├── 01-lazyvim-basics/        # LazyVim基本操作・ナビゲーション
+│   ├── 02-efficient-editing/     # 効率的編集操作（LSP・Treesitter）
+│   ├── 03-search-navigation/     # 検索とナビゲーション（Telescope・LSP）
+│   └── 04-project-management/    # プロジェクト管理（Neo-tree・Session）
+├── config/                       # カスタマイズ例
+│   └── lazyvim-customization/    # LazyVimカスタマイズ例
+└── README.md                     # このファイル
 ```
 
 ## 📝 各レッスンの構成
@@ -95,12 +109,45 @@ XX-lesson-name/
 └── tips.md         # ヒントとよくある間違い
 ```
 
-## 🎓 学習のコツ
+## 🎓 学習の進め方
+
+### 推奨学習パス
+
+1. **01-lazyvim-basics** (必須)
+   - LazyVimの基本操作とwhich-keyの活用
+   - 各種ツール（Telescope、Neo-tree）の基本的な使い方
+   - 見積時間: 60-75分
+
+2. **02-efficient-editing** (重要)
+   - LSPとTreesitterを活用した効率的な編集
+   - 自動補完、スニペット、コメント機能
+   - 見積時間: 60-75分
+
+3. **03-search-navigation** (重要)
+   - Telescopeを中心とした検索・ナビゲーション
+   - LSP統合検索と安全な置換
+   - 見積時間: 60-80分
+
+4. **04-project-management** (応用)
+   - プロジェクト管理とセッション機能
+   - 大規模開発での効率的ワークフロー
+   - 見積時間: 70-90分
+
+### 学習のコツ
 
 1. **実際に手を動かす**: 読むだけでなく、必ずLazyVimで操作してみる
 2. **which-keyを活用**: `<Space>`キーでヘルプを表示して覚える
 3. **段階的に進める**: LazyVimの標準機能をマスターしてからカスタマイズへ
 4. **プロジェクトベース学習**: 実際のコードで練習する
+5. **繰り返し練習**: 重要な操作は身につくまで反復する
+
+### 各レッスンでの学習方法
+
+1. **README.md**: レッスンの概要と目標を理解
+2. **guide.md**: 詳細な操作方法を学習
+3. **practice/**: 実際のファイルで操作練習
+4. **exercises.md**: 段階的な練習問題で習熟度確認
+5. **tips.md**: 効率的な使い方とトラブルシューティング
 
 ## 🤝 貢献
 
