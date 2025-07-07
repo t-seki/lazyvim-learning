@@ -23,10 +23,11 @@ LazyVimディストリビューションを使って、vim/neovimの基本操作
 - **02. 効率的編集操作**: LSP・Treesitter活用、自動補完・スニペット
 - **03. 検索とナビゲーション**: Telescope・LSP統合検索、安全な置換
 - **04. プロジェクト管理**: Neo-tree・プロジェクト管理・セッション機能
+- **05. Text Objectマスター**: Vimの強力な編集機能、LazyVim拡張Text Object
 
-### Phase 2: 実践編（開発準備中）
-- **05. プロジェクト設定**: プロジェクト固有設定
-- **06. デバッグ・テスト**: DAP、テスト統合
+### Phase 2: 実践編（開発中）
+- **06. コーディング機能深掘り**: LSP高度な活用、補完システム、フォーマッティング
+- **07. デバッグ・テスト**: DAP、テスト統合（準備中）
 - **07. カスタマイズ**: LazyVimのカスタマイズ方法
 - **08. 高度なワークフロー**: 高度な開発ワークフロー
 
@@ -98,7 +99,9 @@ lazyvim-learning/
 │   ├── 01-lazyvim-basics/        # LazyVim基本操作・ナビゲーション
 │   ├── 02-efficient-editing/     # 効率的編集操作（LSP・Treesitter）
 │   ├── 03-search-navigation/     # 検索とナビゲーション（Telescope・LSP）
-│   └── 04-project-management/    # プロジェクト管理（Neo-tree・Session）
+│   ├── 04-project-management/    # プロジェクト管理（Neo-tree・Session）
+│   ├── 05-text-objects/          # Text Object操作・LazyVim拡張
+│   └── 06-coding-features/       # LSP高度な活用・補完・フォーマッティング
 ├── config/                       # カスタマイズ例
 │   └── lazyvim-customization/    # LazyVimカスタマイズ例
 └── README.md                     # このファイル

@@ -1,0 +1,21 @@
+{
+  "host": "0.0.0.0",
+  "port": 5000,
+  "debug": true,
+  "database": {
+    "type": "sqlite",
+    "path": "./app.db"
+  },
+  "api": {
+    "version": "v1",
+    "prefix": "/api",
+    "cors": {
+      "enabled": true,
+      "origins": ["http://localhost:3000"]
+    }
+  },
+  "auth": {
+    "secret_key": "your-secret-key-here",
+    "token_expiry": 3600
+  }
+}
